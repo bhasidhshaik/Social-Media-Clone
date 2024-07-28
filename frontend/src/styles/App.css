@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --color-background-primary: #121212;
+  --color-background-secondary: #1E1E1E;
+  --color-background-card: #242424;
+
+  --color-accent-primary: #5046e5;
+  --color-accent-bg: #10172a;
+  --color-accent-secondary: #03DAC6;
+  --color-error: #CF6679;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B3B3B3;
+  --color-text-disabled: #666666;
+
+  --color-border-primary: #333333;
+  --color-border-secondary: #444444;
+}
+
+:root {
+  --font-family-primary:"Geologica", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+.flex-center{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  }
+  body {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+  }
+  .app{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+  }
+  .sidebar-con {
+    flex: 1.5; /* Takes up 1 part of the space */
+    border-right: 1px solid #cccccc55; /* Optional: to separate sections visually */
+  }
+  
+  .main-app-container {
+    flex: 3.2; /* Takes up 4 parts of the space, making it larger */
+    padding: 2rem; /* Optional: for some internal padding */
+    overflow-y: auto; /* Ensures content can scroll if it overflows */
+  }
+  
+  .suggestion-bar-con {
+    flex: 1.7; /* Takes up 1 part of the space */
+  }

@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --color-background-primary: #121212;
+  --color-background-secondary: #1E1E1E;
+  --color-background-card: #242424;
+
+  --color-accent-primary: #5046e5;
+  --color-accent-bg: #10172a;
+  --color-accent-secondary: #03DAC6;
+  --color-error: #FF3333;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B3B3B3;
+  --color-text-disabled: #666666;
+
+  --color-border-primary: #333333;
+  --color-border-secondary: #444444;
+}
+
+:root {
+  --font-family-primary:"Geologica", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+.signup-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.signup-left , .signup-right{
+    width: 45%;
+    min-height: 95vh;
+    border-radius: 50px;
+
+}
+
+.signup-left{
+    background: rgb(1,6,96);
+    background: linear-gradient(295deg, rgba(1,6,96,1) 15%, rgba(157,58,247,1) 59%, rgba(218,172,254,1) 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.signup-left-top img{
+    height: 2.3rem;
+}
+.signup-left-bottom h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.signup-right{
+    background: #000;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: .553rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-right{
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.login-left{
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.singup-form-container{
+    width: 90%;
+}
+.signup-form-header{
+    padding: .2rem 0;
+}
+.signup-form-header h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.signup-form-header h4{
+    color: var(--color-text-secondary);
+}
+.form-container {
+    border: 2px solid transparent;
+    padding: 20px 0px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    /* letter-spacing: 1px; */
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 40px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    background: var(--color-accent-primary);
+    border: 1px solid var(--color-accent-primary);
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: transparent;
+    color: var(--color-accent-primary);
+  }
+  .error{
+    color: var(--color-error);
+    font-weight: 300;
+  }
+  .signin-btn{
+    text-align: center;
+
+  }
+  .signin-btn-link{
+    color: var(--color-accent-primary);
+    text-decoration: none;
+}
+.signin-btn-link span{
+       color: var(--color-accent-primary);
+    text-decoration: underline;
+  }
+  .eye-toggle{
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    cursor: pointer;
+  }
+  .rel{
+    position: relative;
+  }
+  
+  
+  

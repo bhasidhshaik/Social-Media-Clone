@@ -1,0 +1,163 @@
+
+:root {
+    --color-background-primary: #121212;
+    --color-background-secondary: #1E1E1E;
+    --color-background-card: #242424;
+  
+    --color-accent-primary: #5046e5;
+    --color-accent-bg: #10172a;
+    --color-accent-secondary: #03DAC6;
+    --color-error: #CF6679;
+  
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B3B3B3;
+    --color-text-disabled: #666666;
+  
+    --color-border-primary: #333333;
+    --color-border-secondary: #444444;
+  }
+  
+  :root {
+    --font-family-primary:"Geologica", sans-serif;
+    --font-family-secondary: "Open Sans", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  }
+.card {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .8rem;
+    background-color: transparent;
+  }
+  
+  .card__skeleton {
+    background-image: linear-gradient(
+          90deg,
+          var(--color-border-secondary) 0px,
+          var(--color-background-card) 40px,
+          var(--color-background-secondary) 80px
+      );
+    background-size: 300%;
+    background-position: 100% 0;
+    border-radius: inherit;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .card__title {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .card__description {
+    height: 300px;
+  }
+  
+  @keyframes shimmer {
+    to {
+      background-position: -100% 0;
+    }
+  }
+  .skel-container {
+    position: relative;
+    display: flex;
+    width: 100%; /* Tailwind w-64 is 16rem (64 * 0.25rem) */
+    animation: skel-pulse 1.5s infinite ease-in-out;
+    gap: 0.5rem; /* Tailwind gap-2 is 0.5rem */
+    padding: 1rem; /* Tailwind p-4 is 1rem */
+  }
+  
+  .skel-avatar {
+    height: 3rem; /* Tailwind h-12 is 3rem */
+    width: 3rem; /* Tailwind w-12 is 3rem */
+    border-radius: 50%; /* Tailwind rounded-full */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .skel-text {
+    flex: 1;
+  }
+  
+  .skel-title {
+    margin-bottom: 0.25rem; /* Tailwind mb-1 is 0.25rem */
+    height: 3.25rem; /* Tailwind h-5 is 1.25rem */
+    width: 60%; /* Tailwind w-3/5 is 60% */
+    border-radius: 0.5375rem; /* Tailwind rounded-lg is 0.375rem */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .skel-subtitle {
+    height: 2.25rem; /* Tailwind h-5 is 1.25rem */
+    width: 90%; /* Tailwind w-[90%] */
+    border-radius: 0.5375rem; /* Tailwind rounded-lg is 0.375rem */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .skel-badge {
+    position: absolute;
+    bottom: 1.25rem; /* Tailwind bottom-5 is 1.25rem */
+    right: 0;
+    height: 2rem; /* Tailwind h-4 is 1rem */
+    width: 2rem; /* Tailwind w-4 is 1rem */
+    border-radius: 50%; /* Tailwind rounded-full */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  .suggest-skel-container {
+    position: relative;
+    display: flex;
+    width: 100%; /* Tailwind w-64 is 16rem (64 * 0.25rem) */
+    animation: skel-pulse 1.5s infinite ease-in-out;
+    gap: 0.5rem; /* Tailwind gap-2 is 0.5rem */
+    padding: 1rem; /* Tailwind p-4 is 1rem */
+  }
+  
+  .suggest-skel-avatar {
+    height: 3rem; /* Tailwind h-12 is 3rem */
+    width: 3rem; /* Tailwind w-12 is 3rem */
+    border-radius: 50%; /* Tailwind rounded-full */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .suggest-skel-text {
+    flex: 1;
+  }
+  
+  .suggest-skel-title {
+    margin-bottom: 0.25rem; /* Tailwind mb-1 is 0.25rem */
+    height: 1.25rem; /* Tailwind h-5 is 1.25rem */
+    width: 60%; /* Tailwind w-3/5 is 60% */
+    border-radius: 0.5375rem; /* Tailwind rounded-lg is 0.375rem */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .suggest-skel-subtitle {
+    height: 1.25rem; /* Tailwind h-5 is 1.25rem */
+    width: 90%; /* Tailwind w-[90%] */
+    border-radius: 0.5375rem; /* Tailwind rounded-lg is 0.375rem */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  .suggest-skel-badge {
+    position: absolute;
+    bottom: 1.25rem; /* Tailwind bottom-5 is 1.25rem */
+    right: 0;
+    height: 2rem; /* Tailwind h-4 is 1rem */
+    width: 2rem; /* Tailwind w-4 is 1rem */
+    border-radius: 50%; /* Tailwind rounded-full */
+    background-color: var(--color-border-secondary); /* Tailwind bg-slate-400 */
+  }
+  
+  /* Animation */
+  @keyframes skel-pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

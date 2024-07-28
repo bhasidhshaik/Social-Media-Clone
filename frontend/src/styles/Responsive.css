@@ -1,0 +1,121 @@
+@media only screen and (min-width: 901px) and (max-width: 1199px){
+    /* Login and Signup Pages */
+    .signup-right{
+        padding: .553rem 5rem;
+    }
+    
+}
+@media only screen and (min-width: 601px) and (max-width: 900px){
+     /* Login and Signup Pages */
+     .signup-right{
+        padding: .553rem 2rem;
+    }
+    .signup-left{
+        padding-left: 1.5rem;
+    }
+    .signup-left-top h1{
+        font-size: 1rem;
+    }
+    .signup-left-bottom h2{
+        font-size: 2rem;
+    }
+    .loading-con{
+        width: 100%;
+      }
+
+}
+@media only screen and (max-width: 600px){
+    .loading-con{
+        width: 100%;
+      }
+    .signup-container{
+        padding: .4rem;
+    }
+    .signup-left{
+        display: none;
+    }
+    .signup-right{
+        width: 100%;
+        padding: .553rem 1rem;
+        border-radius: 50px;
+    }
+    .sideBarItemText{
+        display: none;
+    }
+    .sideBar{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .suggestion-bar-con{
+        display: none;
+    }
+    .sidebar-con {
+        flex: 0; /* Takes up 1 part of the space */
+        border-right: 1px solid #cccccc55; /* Optional: to separate sections visually */
+      }
+      
+      .main-app-container {
+        flex: 1; /* Takes up 4 parts of the space, making it larger */
+        padding: 1rem; /* Optional: for some internal padding */
+        overflow-y: auto; /* Ensures content can scroll if it overflows */
+      }
+      .post-button {
+        padding: 0 16px;
+        color: white;
+        cursor: pointer;
+        width: 6.3rem;
+        height: 2.3rem;
+    }
+    .avatar-image {
+        width: 32px;
+        border-radius: 50%;
+        height: 32px;
+        object-fit: cover;
+    }
+    .image-preview{
+        width: calc(100% - 60px);
+    }
+    .post-container{
+        padding: 5px;
+    }
+    .post-user{
+        display: none;
+    }
+      
+      .suggestion-bar-con {
+        flex: 0; /* Takes up 1 part of the space */
+      }
+      .profile-image-container img{
+        width: 120px;
+        height: 120px;
+      }
+      .profile-container{
+        column-gap: 1rem;
+      }
+      .profile-details-container{
+        row-gap: .75rem;
+      }
+      .profile-count-details{
+        column-gap: 14px;
+      }
+      .profile-container{
+        padding-top: 2rem;
+      }
+      .profile-username h4{
+        font-size: 1.1115rem;
+        }
+      .profile-full-name span{
+        font-size: 1.114rem;
+    }
+    .follow-edit-btn {
+        margin-bottom: 2rem;
+    }
+    .postName{
+        margin-bottom: 1rem;
+    }
+    .comment-meta{
+        display: none;
+    }
+}

@@ -1,0 +1,117 @@
+.notification-page {
+	flex: 4;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	min-height: 100vh;
+}
+
+.notification-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	border-bottom: 1px solid #333;
+}
+
+.notification-title {
+	font-weight: bold;
+}
+
+.settings-dropdown {
+	position: relative;
+}
+
+.dropdown-button {
+	cursor: pointer;
+	margin: 1px;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	z-index: 1;
+    right: 0;
+    list-style: none;
+    padding: 16px;
+	/* width: 200px; */
+}
+.dropdown-content a{
+    color: #000;
+    cursor: pointer;
+}
+
+.dropdown-button:focus + .dropdown-content,
+.dropdown-content:hover {
+	display: block;
+}
+
+.loading-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.no-notifications {
+	text-align: center;
+	padding: 16px;
+	font-weight: bold;
+}
+
+.notification-item {
+	border-bottom: 1px solid #333;
+}
+
+.notification-content {
+	display: flex;
+	gap: 16px;
+	padding: 16px;
+	align-items: center;
+}
+
+.notification-icon {
+	width: 28px;
+	height: 28px;
+}
+
+.follow-icon {
+	color: #007bff;
+}
+
+.like-icon {
+	color: #ff4500;
+}
+
+.notification-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.notification-avatar {
+	width: 32px;
+}
+
+.avatar-image {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.notification-text {
+	display: flex;
+	gap: 4px;
+}
+
+.username {
+	font-weight: bold;
+}
