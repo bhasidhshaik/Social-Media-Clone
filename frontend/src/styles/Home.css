@@ -65,9 +65,10 @@
 }
 .mobileSideBarItems{
   width: 100%;
-  padding: 0 .5rem;
+  padding: .5rem;
   position: fixed;
   bottom: 0;
+  background: var(--color-background-primary);
 }
 .mobileSideBarItems .sideBarList{
   flex-direction: row;
@@ -267,6 +268,11 @@
 	display: flex;
 	padding: 16px;
 	border-bottom: 1px solid #333;
+  flex-direction: column;
+}
+.post-user-details{
+  display: flex;
+  align-items: center;
 }
 
 .post-avatar {
@@ -338,6 +344,7 @@
 .post-actions {
 	display: flex;
 	justify-content: space-between;
+  width: 90%;
   padding: .5rem;
 	margin-top: 12px;
 }

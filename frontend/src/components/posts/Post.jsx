@@ -127,6 +127,7 @@ const Post = ({ post }) => {
   return (
     <>
       <div className="post-container">
+        <div className="post-user-details">
         <div className="post-avatar">
           <Link to={`/profile/${postOwner?.username}`}>
             <img
@@ -162,6 +163,8 @@ const Post = ({ post }) => {
                 {isDeletingPost && <SpinnerLoader size={"small"} />}
               </span>
             )}
+          </div>
+          </div>
           </div>
           <div className="post-body">
             <span>{post.text}</span>
@@ -228,7 +231,7 @@ const Post = ({ post }) => {
               </form>
             </div>
           )}
-        </div>
+   
       </div>
     </>
   );
